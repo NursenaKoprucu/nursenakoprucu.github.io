@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  DRAFT. Before you publish:
+  1. Replace every <mark class="todo"> with your own text. Search for "todo".
+  2. Rewrite the lead sentence and the short biography in your own words.
+  3. Delete the <div class="draft-bar"> at the top of <body>.
+  4. Optional: replace the three small drawings in "Research" with real figures from the papers.
+  All facts on this page come from your Cambridge page, Google Scholar, arXiv and LinkedIn. Check each one.
+-->
+<title>Nursena Koprucu Aslan: 3D vision and generative modelling</title>
+<meta name="description" content="Nursena Koprucu Aslan is a PhD student in computer science at the University of Cambridge. She works on 3D computer vision, geometry processing and generative models that stay valid at every size.">
+<meta property="og:title" content="Nursena Koprucu Aslan">
+<meta property="og:description" content="PhD student at the University of Cambridge. 3D computer vision, geometry processing and generative models that stay valid at every size.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1433'/%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%2321918C' stroke-width='2.5'/%3E%3Ccircle cx='16' cy='16' r='6.5' fill='none' stroke='%235EC962' stroke-width='2.5'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%23FDE725'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nursena Koprucu Aslan",
+  "alternateName": ["Nursena Köprücü", "Nursena Koprucu"],
+  "jobTitle": "PhD student",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "University of Cambridge" },
+  "sameAs": [
+    "https://scholar.google.com/citations?user=5a0RAQ4AAAAJ",
+    "https://www.cst.cam.ac.uk/people/nk618",
+    "https://www.linkedin.com/in/nursena-koprucu-aslan-4b4427131/"
+  ]
+}
+</script>
+<style>
+  :root {
+    --page: #FAFBFC;
+    --ink: #17152B;
+    --muted: #5B5C72;
+    --rule: #DADCE6;
+    --link: #22708A;
+    --link-hover: #414487;
+    --mark: #FDE725;
+    --viewport: #1A1433;
+    --viewport-ink: #E9E7F5;
+    --viewport-muted: #A9A6C6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page: #14122A;
+      --ink: #ECEBF5;
+      --muted: #A8A7C2;
+      --rule: #2F2C50;
+      --link: #7AD151;
+      --link-hover: #FDE725;
+      --viewport: #0F0D22;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font: 400 1.125rem/1.6 "STIX Two Text", "STIXGeneral", Cambria, Georgia, serif;
+  }
+  a { color: var(--link); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+  a:hover { color: var(--link-hover); }
+  a:focus-visible, input:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-radius: 2px; }
+  p { margin: 0 0 1em; }
+
+  .draft-bar {
+    background: var(--mark);
+    color: #17152B;
+    padding: 0.55rem 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  mark.todo {
+    background: var(--mark);
+    color: #17152B;
+    padding: 0 0.25em;
+    border-radius: 2px;
+  }
+
+  .wrap { max-width: 68rem; margin: 0 auto; padding: 0 1.5rem; }
+  .column { max-width: 42rem; }
+
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    gap: 3.5rem;
+    align-items: center;
+    padding: 4rem 0 3rem;
+  }
+  h1 {
+    font-size: clamp(2rem, 1.4rem + 2.4vw, 3rem);
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.6rem;
+  }
+  .role { color: var(--muted); margin: 0 0 1.75rem; }
+  .lead {
+    font-size: clamp(1.35rem, 1.1rem + 1vw, 1.75rem);
+    line-height: 1.3;
+    font-style: italic;
+    margin: 0 0 1.5rem;
+    max-width: 24ch;
+  }
+  .hero .bio { max-width: 34rem; }
+  .links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.5rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
+
+  figure.viewer { margin: 0; }
+  .viewer-frame {
+    background: var(--viewport);
+    border-radius: 6px;
+    padding: 0.75rem 0.75rem 1rem;
+  }
+  .viewer canvas { display: block; width: 100%; height: auto; aspect-ratio: 520 / 590; }
+  .budget {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.25rem 0.9rem;
+    align-items: center;
+    padding: 0.25rem 0.5rem 0;
+    color: var(--viewport-ink);
+    font-size: 0.95rem;
+  }
+  .budget input[type="range"] { width: 100%; accent-color: #5EC962; margin: 0; }
+  .budget output { grid-column: 1 / -1; color: var(--viewport-muted); font-variant-numeric: tabular-nums; }
+  .viewer figcaption { color: var(--muted); font-size: 0.95rem; line-height: 1.45; margin-top: 0.75rem; }
+
+  main section { padding: 2.25rem 0; }
+  h2 { font-size: 1.5rem; line-height: 1.2; font-weight: 600; margin: 0 0 1.5rem; }
+
+  .paper {
+    display: grid;
+    grid-template-columns: 7.5rem minmax(0, 1fr);
+    gap: 1.5rem;
+    margin: 0 0 2.5rem;
+    max-width: 52rem;
+  }
+  .paper:last-child { margin-bottom: 0; }
+  .glyph { background: var(--viewport); border-radius: 4px; display: block; width: 100%; height: auto; }
+  .paper h3 { font-size: 1.25rem; line-height: 1.25; font-weight: 600; margin: 0 0 0.35rem; }
+  .paper h3 a { color: inherit; }
+  .paper h3 a:hover { color: var(--link-hover); }
+  .authors, .venue { color: var(--muted); font-size: 0.98rem; line-height: 1.45; margin: 0 0 0.35rem; }
+  .authors strong { color: var(--ink); font-weight: 600; }
+  .paper .summary { margin: 0.6rem 0 0.5rem; max-width: 40rem; }
+  .paper .part { margin: 0 0 0.6rem; max-width: 40rem; }
+  .paper-links { display: flex; flex-wrap: wrap; gap: 0.3rem 1.25rem; margin: 0; padding: 0; list-style: none; }
+
+  .earlier { margin: 0; padding: 0; list-style: none; max-width: 42rem; }
+  .earlier li { margin: 0 0 1.1rem; }
+  .earlier .authors { margin: 0.15rem 0 0; }
+
+  dl.background { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.6rem 1.5rem; margin: 0; max-width: 52rem; }
+  dl.background dt { color: var(--muted); font-variant-numeric: tabular-nums; }
+  dl.background dd { margin: 0; }
+
+  footer { border-top: 1px solid var(--rule); margin-top: 1.5rem; padding: 1.75rem 0 3rem; color: var(--muted); font-size: 0.98rem; }
+  footer p { margin: 0 0 0.4rem; }
+
+  @media (max-width: 820px) {
+    .hero { grid-template-columns: minmax(0, 1fr); gap: 2.25rem; padding: 2.5rem 0 2rem; }
+    figure.viewer { max-width: 26rem; }
+    .paper { grid-template-columns: minmax(0, 1fr); gap: 0.9rem; }
+    .glyph { width: 7.5rem; }
+    dl.background { grid-template-columns: minmax(0, 1fr); gap: 0.1rem; }
+    dl.background dd { margin-bottom: 0.8rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="draft-bar">Draft. The yellow marks show text that only Nursena can write. Replace each mark, then delete this bar.</div>
+
+<div class="wrap">
+  <header class="hero">
+    <div>
+      <h1>Nursena Koprucu Aslan</h1>
+      <p class="role">PhD student in computer science at the University of Cambridge, supervised by <a href="https://www.cst.cam.ac.uk/people/aco41">Cengiz Öztireli</a></p>
+      <p class="lead">I build models that stay valid at every size and that respect 3D structure.</p>
+      <div class="bio">
+        <p>I work on 3D computer vision, geometry processing and generative modelling. Before Cambridge I was a research intern at the Max Planck Institute for Intelligent Systems with Antonio Orvieto, and I did an MRes at Imperial College London with Tolga Birdal. I studied computer engineering and mathematics at Koç University.</p>
+        <p>I am looking for a research internship in <mark class="todo">2027: write the months</mark>. I am most useful where one model must serve several compute budgets, or where a model must respect the structure of 3D data.</p>
+      </div>
+      <ul class="links">
+        <li><a href="mailto:nk618@cam.ac.uk">nk618@cam.ac.uk</a></li>
+        <li><a href="https://scholar.google.com/citations?user=5a0RAQ4AAAAJ">Google Scholar</a></li>
+        <li><a href="#"><mark class="todo">GitHub: add the link</mark></a></li>
+        <li><a href="https://www.linkedin.com/in/nursena-koprucu-aslan-4b4427131/">LinkedIn</a></li>
+        <li><a href="#"><mark class="todo">CV (PDF): add the file</mark></a></li>
+      </ul>
+    </div>
+
+    <figure class="viewer">
+      <div class="viewer-frame">
+        <canvas id="splats" width="520" height="590" role="img" aria-label="A nested doll drawn with soft elliptical splats. The slider below sets how many splats of one ordered set are drawn.">Your browser does not show this drawing.</canvas>
+        <div class="budget">
+          <label for="budget">Budget</label>
+          <input id="budget" type="range" min="0" max="1000" value="1000" step="1">
+          <output id="budget-out" for="budget">All splats</output>
+        </div>
+      </div>
+      <figcaption>Drag the slider. The first splats of one ordered set already form the whole shape, and the later splats add detail. Colour shows the position in the order. This drawing illustrates the idea of Matryoshka Gaussian Splatting. It is not output from the paper.</figcaption>
+    </figure>
+  </header>
+
+  <main>
+    <section aria-labelledby="research">
+      <h2 id="research">Research</h2>
+
+      <article class="paper">
+        <svg class="glyph" viewBox="0 0 120 76" role="img" aria-label="Eight splats in order from large to small. A bracket marks the first four.">
+          <circle cx="14" cy="32" r="9" fill="#4662A8"/>
+          <circle cx="33.5" cy="32" r="7.5" fill="#317D98"/>
+          <circle cx="50.5" cy="32" r="6.5" fill="#279788"/>
+          <circle cx="65.5" cy="32" r="5.5" fill="#40AE77"/>
+          <circle cx="78.5" cy="32" r="4.5" fill="#59C465" opacity=".4"/>
+          <circle cx="90" cy="32" r="4" fill="#8BD251" opacity=".4"/>
+          <circle cx="100.5" cy="32" r="3.5" fill="#C4DC3B" opacity=".4"/>
+          <circle cx="110" cy="32" r="3" fill="#FDE725" opacity=".4"/>
+          <path d="M5 50 V55 H71 V50" fill="none" stroke="#E9E7F5" stroke-width="1"/>
+        </svg>
+        <div>
+          <h3><a href="https://arxiv.org/abs/2603.19234">Matryoshka Gaussian Splatting</a></h3>
+          <p class="authors">Zhilin Guo, Boqiao Zhang, Hakan Aktas, Kyle Fogarty, Jeffrey Hu, <strong>Nursena Koprucu Aslan</strong>, Wenzhao Li, Canberk Baykal, Albert Miao, Josef Bengtson, Chenliang Zhou, Weihao Xia, Cristina Nader Vasconcelos, Cengiz Öztireli</p>
+          <p class="venue">ECCV 2026</p>
+          <p class="summary">A standard Gaussian splatting model has one fixed size. We train a single ordered set of Gaussians so that the first <i>k</i> of them already form a coherent scene. One model then renders at any budget, and at full size it matches the quality of its backbone.</p>
+          <p class="part">My part: <mark class="todo">write one sentence on your exact contribution</mark></p>
+          <ul class="paper-links">
+            <li><a href="https://arxiv.org/abs/2603.19234">Paper</a></li>
+            <li><a href="https://github.com/ZhilinGuo/matryoshka-gaussian-splatting">Code</a></li>
+            <li><a href="https://zhilinguo.github.io/MGS">Project page</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="paper">
+        <svg class="glyph" viewBox="0 0 120 76" role="img" aria-label="Eight stacked layers. A bracket marks the first three from the bottom.">
+          <rect x="36" y="60" width="64" height="5" rx="1" fill="#4662A8"/>
+          <rect x="36" y="52.5" width="64" height="5" rx="1" fill="#317D98"/>
+          <rect x="36" y="45" width="64" height="5" rx="1" fill="#279788"/>
+          <rect x="36" y="37.5" width="64" height="5" rx="1" fill="#40AE77" opacity=".4"/>
+          <rect x="36" y="30" width="64" height="5" rx="1" fill="#59C465" opacity=".4"/>
+          <rect x="36" y="22.5" width="64" height="5" rx="1" fill="#8BD251" opacity=".4"/>
+          <rect x="36" y="15" width="64" height="5" rx="1" fill="#C4DC3B" opacity=".4"/>
+          <rect x="36" y="7.5" width="64" height="5" rx="1" fill="#FDE725" opacity=".4"/>
+          <path d="M28 65 H23 V45 H28" fill="none" stroke="#E9E7F5" stroke-width="1"/>
+        </svg>
+        <div>
+          <h3><a href="https://arxiv.org/abs/2609.35769">Telescopic Language Models</a></h3>
+          <p class="authors">Zhilin Guo, Boqiao Zhang, Hakan Aktas, Kyle Fogarty, <strong>Nursena Koprucu Aslan</strong>, Wenzhao Li, Canberk Baykal, Albert Miao, Siyu Hong, Yixiao Liu, Adam Wu, Ashish Kumar Singh, Sakar Khattar, Chenliang Zhou, Weihao Xia, Cristina Nader Vasconcelos, Cengiz Öztireli</p>
+          <p class="venue">arXiv preprint, September 2026</p>
+          <p class="summary">A Transformer in which every depth prefix is a valid language model. Each training step supervises one randomly truncated prefix and the full model, with no change to the architecture. On a 200M-parameter suite trained on 20B tokens, one run is usable at all twenty depths.</p>
+          <p class="part">My part: <mark class="todo">write one sentence on your exact contribution</mark></p>
+          <ul class="paper-links">
+            <li><a href="https://arxiv.org/abs/2609.35769">Paper</a></li>
+            <li><a href="https://github.com/ZhilinGuo/telescopic-language-models">Code</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="paper">
+        <svg class="glyph" viewBox="0 0 120 76" role="img" aria-label="Eight scattered points joined by one path, then the same points as one ordered column.">
+          <polyline points="14,20 44,12 38,26 56,30 50,52 62,62 30,60 26,44" fill="none" stroke="#A9A6C6" stroke-width="1"/>
+          <circle cx="14" cy="20" r="3" fill="#4662A8"/>
+          <circle cx="44" cy="12" r="3" fill="#317D98"/>
+          <circle cx="38" cy="26" r="3" fill="#279788"/>
+          <circle cx="56" cy="30" r="3" fill="#40AE77"/>
+          <circle cx="50" cy="52" r="3" fill="#59C465"/>
+          <circle cx="62" cy="62" r="3" fill="#8BD251"/>
+          <circle cx="30" cy="60" r="3" fill="#C4DC3B"/>
+          <circle cx="26" cy="44" r="3" fill="#FDE725"/>
+          <path d="M74 38 H88 M84 34 L88 38 L84 42" fill="none" stroke="#E9E7F5" stroke-width="1"/>
+          <circle cx="102" cy="10" r="2.6" fill="#4662A8"/>
+          <circle cx="102" cy="18" r="2.6" fill="#317D98"/>
+          <circle cx="102" cy="26" r="2.6" fill="#279788"/>
+          <circle cx="102" cy="34" r="2.6" fill="#40AE77"/>
+          <circle cx="102" cy="42" r="2.6" fill="#59C465"/>
+          <circle cx="102" cy="50" r="2.6" fill="#8BD251"/>
+          <circle cx="102" cy="58" r="2.6" fill="#C4DC3B"/>
+          <circle cx="102" cy="66" r="2.6" fill="#FDE725"/>
+        </svg>
+        <div>
+          <h3><a href="https://arxiv.org/abs/2411.00151">NIMBA: Towards Robust and Principled Processing of Point Clouds With SSMs</a></h3>
+          <p class="authors"><strong>Nursena Köprücü</strong>, Destiny Okpekpe, Antonio Orvieto</p>
+          <p class="venue">arXiv preprint, 2024. Work done at the Max Planck Institute for Intelligent Systems.</p>
+          <p class="summary">State-space models such as Mamba read a sequence in order, but a point cloud has no order. We convert a point cloud into a 1D sequence that keeps its 3D spatial structure. The model then needs no positional embeddings and shorter sequences, and it outperforms Transformer-based models in accuracy and efficiency on ModelNet40 and ScanObjectNN.</p>
+          <p class="part">First author.</p>
+          <ul class="paper-links">
+            <li><a href="https://arxiv.org/abs/2411.00151">Paper</a></li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="earlier">
+      <h2 id="earlier">Earlier work</h2>
+      <ul class="earlier">
+        <li>
+          Locally Rigid Registration for Structural Deformation Monitoring
+          <p class="authors">Caner Korkmaz, <strong>Nursena Köprücü</strong>, S. Aşıkgöz, Fatma Güney. <mark class="todo">add the venue and year, or delete this entry</mark></p>
+        </li>
+        <li>
+          Beta Poisoning Attacks Against Machine Learning Models: Extensions, Limitations and Defenses
+          <p class="authors">Atakan Kara, <strong>Nursena Koprucu</strong>, M. Emre Gursoy. IEEE TPS-ISA 2022</p>
+        </li>
+        <li>
+          Detection of Stride Time and Stance Phase Ratio from Accelerometer Data for Gait Analysis
+          <p class="authors">A. R. Emirdağı, F. Tokmak, <strong>N. Köprücü</strong>, K. Akar, A. Vural, E. Erzin. SIU 2022</p>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="background">
+      <h2 id="background">Background</h2>
+      <dl class="background">
+        <dt>2026 to now</dt>
+        <dd>PhD in computer science, University of Cambridge, with Cengiz Öztireli</dd>
+        <dt>2024</dt>
+        <dd>Research intern, Max Planck Institute for Intelligent Systems, Tübingen, with Antonio Orvieto (March to September)</dd>
+        <dt>2022 to 2023</dt>
+        <dd>MRes in artificial intelligence and machine learning, Imperial College London, with Tolga Birdal</dd>
+        <dt>2022</dt>
+        <dd>Research fellow, MIT Summer Geometry Initiative</dd>
+        <dt>2021 to 2022</dt>
+        <dd>Research assistant, TÜBİTAK BİLGEM</dd>
+        <dt>2016 to 2022</dt>
+        <dd>BSc in computer engineering and BSc in mathematics, Koç University, with a merit-based full scholarship</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <p>Write to me at <a href="mailto:nk618@cam.ac.uk">nk618@cam.ac.uk</a>. A specific question about one of the papers is the easiest message to answer.</p>
+    <p>William Gates Building, 15 JJ Thomson Avenue, Cambridge CB3 0FD. Last updated in November 2026.</p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var canvas = document.getElementById('splats');
+  var slider = document.getElementById('budget');
+  var out = document.getElementById('budget-out');
+  if (!canvas || !canvas.getContext) return;
+  var ctx = canvas.getContext('2d');
+  var W = 520, H = 590;
+  var dpr = Math.min(window.devicePixelRatio || 1, 2);
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
+
+  function makeRng(seed) {
+    return function () {
+      seed |= 0; seed = seed + 0x6D2B79F5 | 0;
+      var t = Math.imul(seed ^ seed >>> 15, 1 | seed);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+  var rand = makeRng(20260319);
+  function between(a, b) { return a + rand() * (b - a); }
+
+  var cx = W / 2;
+  var head = { x: cx, y: 150, r: 92 };
+  var body = { x: cx, y: 352, rx: 150, ry: 186 };
+  var baseY = 522;
+  function inHead(x, y) { var dx = x - head.x, dy = y - head.y; return dx * dx + dy * dy <= head.r * head.r; }
+  function inBody(x, y) { var dx = (x - body.x) / body.rx, dy = (y - body.y) / body.ry; return dx * dx + dy * dy <= 1 && y <= baseY; }
+  function inside(x, y) { return inHead(x, y) || inBody(x, y); }
+  function insideBy(x, y, m) { return inside(x - m, y) && inside(x + m, y) && inside(x, y - m) && inside(x, y + m); }
+
+  var coarse = [], fine = [];
+  function splat(list, x, y, rx, ry, rot, alpha) { list.push({ x: x, y: y, rx: rx, ry: ry, rot: rot, a: alpha }); }
+
+  splat(coarse, body.x, body.y + 4, 150, 184, 0, 0.5);
+  splat(coarse, head.x, head.y, 96, 96, 0, 0.5);
+  [[10, 58, 0.30], [36, 30, 0.26], [120, 15, 0.22]].forEach(function (level) {
+    var count = 0, guard = 0;
+    while (count < level[0] && guard < 20000) {
+      guard++;
+      var x = between(cx - 160, cx + 160), y = between(50, baseY);
+      if (!insideBy(x, y, level[1] * 0.6)) continue;
+      splat(coarse, x, y, level[1] * between(0.85, 1.25), level[1] * between(0.85, 1.25), between(0, Math.PI), level[2]);
+      count++;
+    }
+  });
+
+  var i, a, x, y;
+  for (i = 0; i < 70; i++) {
+    a = (i + rand() * 0.6) / 70 * Math.PI * 2;
+    x = head.x + head.r * Math.cos(a); y = head.y + head.r * Math.sin(a);
+    if (inBody(x, y)) continue;
+    splat(fine, x, y, between(8, 12), between(2.2, 3.2), a + Math.PI / 2, 0.85);
+  }
+  for (i = 0; i < 130; i++) {
+    a = (i + rand() * 0.6) / 130 * Math.PI * 2;
+    x = body.x + body.rx * Math.cos(a); y = body.y + body.ry * Math.sin(a);
+    if (inHead(x, y) || y > baseY) continue;
+    splat(fine, x, y, between(8, 12), between(2.2, 3.2), Math.atan2(body.ry * Math.cos(a), -body.rx * Math.sin(a)), 0.85);
+  }
+  var halfBase = body.rx * Math.sqrt(1 - Math.pow((baseY - body.y) / body.ry, 2));
+  for (i = 0; i < 24; i++) {
+    splat(fine, cx - halfBase + (i + 0.5) / 24 * 2 * halfBase, baseY, between(8, 11), between(2.2, 3), 0, 0.85);
+  }
+  var face = { x: cx, y: 158, r: 54 };
+  for (i = 0; i < 56; i++) {
+    a = (i + rand() * 0.5) / 56 * Math.PI * 2;
+    splat(fine, face.x + face.r * Math.cos(a), face.y + face.r * Math.sin(a), between(6, 9), between(2, 2.8), a + Math.PI / 2, 0.8);
+  }
+  [-19, 19].forEach(function (dx) {
+    for (i = 0; i < 3; i++) splat(fine, cx + dx + between(-1, 1), 150 + between(-1, 1), 4.5, 4.5, 0, 0.9);
+  });
+  for (i = 0; i < 7; i++) {
+    a = Math.PI * (0.25 + 0.5 * i / 6);
+    splat(fine, cx + 17 * Math.cos(a), 164 + 17 * Math.sin(a), 5, 2, a + Math.PI / 2, 0.85);
+  }
+  splat(fine, cx - 31, 172, 9, 7, 0, 0.35);
+  splat(fine, cx + 31, 172, 9, 7, 0, 0.35);
+  var apron = { x: cx, y: 384, rx: 76, ry: 92 };
+  for (i = 0; i < 100; i++) {
+    a = (i + rand() * 0.5) / 100 * Math.PI * 2;
+    splat(fine, apron.x + apron.rx * Math.cos(a), apron.y + apron.ry * Math.sin(a), between(6, 9), between(2, 2.8), Math.atan2(apron.ry * Math.cos(a), -apron.rx * Math.sin(a)), 0.8);
+  }
+  for (var p = 0; p < 6; p++) {
+    a = p / 6 * Math.PI * 2 - Math.PI / 2;
+    for (i = 0; i < 4; i++) {
+      var d = 13 + i * 6;
+      splat(fine, apron.x + d * Math.cos(a), apron.y + d * Math.sin(a), 8, 4.2 + i * 0.6, a, 0.8);
+    }
+  }
+  for (i = 0; i < 3; i++) splat(fine, apron.x + between(-1.5, 1.5), apron.y + between(-1.5, 1.5), 6, 6, 0, 0.9);
+  var count = 0, guard = 0;
+  while (count < 260 && guard < 40000) {
+    guard++;
+    x = between(cx - 150, cx + 150); y = between(200, baseY - 6);
+    if (!insideBy(x, y, 9)) continue;
+    var ax = (x - apron.x) / (apron.rx + 8), ay = (y - apron.y) / (apron.ry + 8);
+    if (ax * ax + ay * ay < 1) continue;
+    if (inHead(x, y)) continue;
+    splat(fine, x, y, between(2.4, 4.2), between(2.4, 4.2), 0, 0.55);
+    count++;
+  }
+  for (i = fine.length - 1; i > 0; i--) {
+    var j = Math.floor(rand() * (i + 1));
+    var tmp = fine[i]; fine[i] = fine[j]; fine[j] = tmp;
+  }
+
+  var splats = coarse.concat(fine);
+  var N = splats.length;
+  var stops = [[0, 70, 98, 168], [0.25, 33, 145, 140], [0.6, 94, 201, 98], [1, 253, 231, 37]];
+  function colour(t) {
+    for (var s = 1; s < stops.length; s++) {
+      if (t <= stops[s][0]) {
+        var lo = stops[s - 1], hi = stops[s], u = (t - lo[0]) / (hi[0] - lo[0]);
+        return [Math.round(lo[1] + (hi[1] - lo[1]) * u), Math.round(lo[2] + (hi[2] - lo[2]) * u), Math.round(lo[3] + (hi[3] - lo[3]) * u)];
+      }
+    }
+    return [253, 231, 37];
+  }
+  splats.forEach(function (s, index) { s.c = colour(index / (N - 1)); });
+
+  function draw(k) {
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = 'screen';
+    for (var n = 0; n < k; n++) {
+      var s = splats[n];
+      var rgb = s.c[0] + ',' + s.c[1] + ',' + s.c[2];
+      ctx.save();
+      ctx.translate(s.x, s.y);
+      ctx.rotate(s.rot);
+      ctx.scale(1, s.ry / s.rx);
+      var g = ctx.createRadialGradient(0, 0, 0, 0, 0, s.rx);
+      g.addColorStop(0, 'rgba(' + rgb + ',' + s.a + ')');
+      g.addColorStop(0.55, 'rgba(' + rgb + ',' + (s.a * 0.5) + ')');
+      g.addColorStop(1, 'rgba(' + rgb + ',0)');
+      ctx.fillStyle = g;
+      ctx.beginPath();
+      ctx.arc(0, 0, s.rx, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    }
+  }
+
+  function countFor(value) {
+    return Math.max(1, Math.min(N, Math.round(Math.pow(N, value / 1000))));
+  }
+  function render(value) {
+    var k = countFor(value);
+    draw(k);
+    var text = k === N ? 'All ' + N + ' splats' : 'First ' + k + ' of ' + N + ' splats';
+    out.textContent = text;
+    slider.setAttribute('aria-valuetext', text);
+  }
+
+  var frame = null;
+  function stopIntro() { if (frame) { cancelAnimationFrame(frame); frame = null; } }
+  slider.addEventListener('input', function () { stopIntro(); render(+slider.value); });
+  slider.addEventListener('pointerdown', stopIntro);
+  slider.addEventListener('keydown', stopIntro);
+
+  var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  render(1000);
+  if (!still) {
+    var start = null, from = 150, duration = 1800;
+    frame = requestAnimationFrame(function step(now) {
+      if (start === null) start = now;
+      var u = Math.min(1, (now - start) / duration);
+      var eased = 1 - Math.pow(1 - u, 3);
+      var value = Math.round(from + (1000 - from) * eased);
+      slider.value = value;
+      render(value);
+      frame = u < 1 ? requestAnimationFrame(step) : null;
+    });
+  }
+})();
+</script>
+</body>
+</html>
