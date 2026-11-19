@@ -95,7 +95,10 @@
     letter-spacing: -0.01em;
     margin: 0 0 0.6rem;
   }
-  .role { color: var(--muted); margin: 0; }
+  .role { margin: 0; padding: 0; list-style: none; line-height: 1.35; }
+  .role .position { font-size: 1.25rem; }
+  .role .place { margin-top: 0.1rem; }
+  .role .advisor { color: var(--muted); font-size: 1rem; margin-top: 0.5rem; }
   .hero .bio { max-width: 36rem; }
   .hero .bio p:last-child { margin-bottom: 0; }
   .links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.5rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
@@ -163,7 +166,11 @@
         <img class="portrait" src="assets/nursena.jpg" width="760" height="701" alt="Portrait of Nursena Koprucu Aslan">
         <div>
           <h1>Nursena Koprucu Aslan</h1>
-          <p class="role">PhD student in computer science at the University of Cambridge, supervised by <a href="https://www.cst.cam.ac.uk/people/aco41">Cengiz Öztireli</a></p>
+          <ul class="role">
+            <li class="position">PhD student in computer science</li>
+            <li class="place">University of Cambridge</li>
+            <li class="advisor">Supervised by <a href="https://www.cst.cam.ac.uk/people/aco41">Cengiz Öztireli</a></li>
+          </ul>
         </div>
       </div>
       <div class="bio">
